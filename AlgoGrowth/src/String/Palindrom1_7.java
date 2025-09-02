@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class Palindrome1_6 { // 회문문자열 - 앞에서 읽을 때나 뒤에서 읽을 때나 같은 문자열
+public class Palindrom1_7 { // 회문문자열 - 앞에서 읽을 때나 뒤에서 읽을 때나 같은 문자열
 
     /**
      * 설명
@@ -24,24 +24,34 @@ public class Palindrome1_6 { // 회문문자열 - 앞에서 읽을 때나 뒤에
      * 첫 번째 줄에 회문 문자열인지의 결과를 YES 또는 NO로 출력합니다.
      */
     public String solution(String str) {
-        String answer = "";
-        for (int i = 0; i < str.length(); i++) {
-            // System.out.println(str.charAt(i)+ " " + i + " " +
-            // str.indexOf(str.charAt(i)));
-            if (str.indexOf(str.charAt(i)) == i) { // 중복 제거
-                answer += str.charAt(i);
-            }
+        String answer = "NO";
+
+        // str = str.toUpperCase();
+        // int len = str.length();
+        //
+        // for (int i = 0; i <len; i++) {
+        //
+        // if (i < len/2) {
+        // if (str.charAt(i) != str.charAt(len-i-1)) {
+        // answer = "NO";
+        // }
+        // }
+        // }
+
+        String tmp = new StringBuilder(str).reverse().toString();
+        if (str.equalsIgnoreCase(tmp)) {
+            answer = "YES";
         }
 
         return answer;
     }
 
-    public static void main(String args[]) {
-        RemoveDuplicates T = new RemoveDuplicates();
+    public static void main(String[] args) {
+        Palindrom1_7 T = new Palindrom1_7();
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
+
         System.out.println(T.solution(str));
         sc.close();
-
     }
 }

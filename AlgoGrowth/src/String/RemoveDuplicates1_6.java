@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class RemoveDuplicates {
+public class RemoveDuplicates1_6 {
 
     /**
      * 설명
@@ -35,7 +35,7 @@ public class RemoveDuplicates {
     }
 
     public static void main(String args[]) {
-        RemoveDuplicates T = new RemoveDuplicates();
+        RemoveDuplicates1_6 T = new RemoveDuplicates1_6();
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.println(T.solution(str));
