@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class Palindrome { // 회문문자열 - 앞에서 읽을 때나 뒤에서 읽을 때나 같은 문자열
+public class Palindrome1_6 { // 회문문자열 - 앞에서 읽을 때나 뒤에서 읽을 때나 같은 문자열
 
     /**
      * 설명

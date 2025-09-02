@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class UniqueStringReverser {
+public class UniqueStringReverser1_5 {
 
     /**
      * 설명
@@ -46,7 +46,7 @@ public class UniqueStringReverser {
     }
 
     public static void main(String args[]) {
-        UniqueStringReverser T = new UniqueStringReverser();
+        UniqueStringReverser1_5 T = new UniqueStringReverser1_5();
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.println(T.solution(str));
